@@ -1,0 +1,39 @@
+body{
+	width: 80%;
+	text-align: center;
+	margin: 25px auto;
+}
+
+main{
+	margin: 0 auto;	
+}
+
+p{
+	font-family: cursive;
+	font-size: 1.5em;
+}
+
+button{
+	font-family: cursive;
+	width: 70px;
+	margin: 5px 5px;
+	border-radius: 5px;
+}
+
+#buttons{
+	margin: 50px 0 100px 0;
+}
+
+#button1{
+	width:240px;
+}
+
+#box{
+	margin: 25px auto;	
+	height:150px;
+	width:150px;
+	background-color:orange;
+	border-radius: 10px;
+	max-width: 400px;
+	max-height: 400px;
+}

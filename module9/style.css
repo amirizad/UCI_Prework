@@ -1,0 +1,41 @@
+body{
+	width: 80%;
+	margin: 0 auto;
+}
+.centeredtext{
+	text-align: center;
+}
+.redtext{
+	color: red;
+}
+.bluetext{
+	color: blue;
+}
+.greentext{
+	color: green;
+}
+.bigtext{
+	font-size: 30px;
+}
+.tinytext{
+	font-size: 10px;
+}
+.boldtext{
+	font-weight: bold;
+}
+.otherfont{
+	font-family: sans-serif;
+}
+.multiattr{
+	color: orange;
+	font-weight: bold;
+	font-size: 26px;
+}
+.styledFont{
+	font-family: sans-serif;
+	font-size: 19px;
+	color: green;
+}
+#styledImage{
+	border: 10px solid orange;
+}
