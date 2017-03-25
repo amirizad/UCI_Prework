@@ -1,39 +1,49 @@
 body{
 	width: 80%;
 	text-align: center;
-	margin: 25px auto;
+	margin: 50px auto;
 }
-
-main{
-	margin: 0 auto;	
-}
-
 p{
 	font-family: cursive;
 	font-size: 1.5em;
+	color: #000066;
 }
-
-button{
+.btn{
 	font-family: cursive;
 	width: 70px;
+	height: 35px;
 	margin: 5px 5px;
 	border-radius: 5px;
 }
-
-#buttons{
-	margin: 50px 0 100px 0;
+.lbl{
+	display: none;
+	background-color: blue;
+	box-shadow: none;
+	border: 0;
+	font-family: cursive;
+	width: 70px;
+	height: 35px;
+	margin: 5px 5px;
+	border-radius: 5px;
 }
-
 #button1{
-	width:240px;
+    width: 240px;
+    font-size: 18px;
+    color: white;
+    background-color: #000066;
 }
-
+#buttons{
+	margin: 30px 0 100px 0;
+}
 #box{
 	margin: 25px auto;	
 	height:150px;
 	width:150px;
-	background-color:orange;
+	background: url('logo.png') no-repeat transparent;
+	background-size: contain;
 	border-radius: 10px;
+	min-width: 150px;
+	min-height: 150px;
 	max-width: 400px;
 	max-height: 400px;
 }

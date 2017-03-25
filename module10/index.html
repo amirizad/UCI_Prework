@@ -8,26 +8,34 @@
     <script type="text/javascript" src="javascript.js"></script>
 </head>
 <body>
+	<input type="hidden" id="prev-c" value="red">
+	<input type="hidden" id="curr-c" value="blue">
+	<input type="hidden" id="next-c" value="yellow">
+	<input type="hidden" id="rotation" value="0">
 	<main>
-	    <p>Press the buttons to change the box!</p>
+	    <p>Press the buttons to change the box STYLE!</p>
 	    <div id="buttons">
-		    <button id="button1">Reset</button>
+		    <button class="btn" id="button1">Reset</button>
 		    <br>
-		    <button id="button2">Grow</button>
-		    <button id="button3">Blue</button>
-		    <button id="button4">Fade</button>
+		    <button class="lbl" id="lbl1">Previous</button>
+		    <button class="lbl" id="lbl2">Current</button>
+		    <button class="lbl" id="lbl3">Next</button>
 		    <br>
-		    <button id="button5">Rotate</button>
-		    <button id="button6">Circle</button>
-		    <button id="button7">Hide</button>
+		    <button class="btn" id="button2">Grow</button>
+		    <button class="btn" id="button3">Yellow</button>
+		    <button class="btn" id="button4">Fade</button>
 		    <br>
-		    <button id="button8">Outline</button>
-		    <button id="button9">Border</button>
-		    <button id="button10">Shadow</button>
+		    <button class="btn" id="button5">Rotate</button>
+		    <button class="btn" id="button6">Circle</button>
+		    <button class="btn" id="button7">Hide</button>
 		    <br>
-		    <button id="button11">Cursor</button>
-		    <button id="button12">Gradient</button>
-		    <button id="button13">Logo</button>
+		    <button class="btn" id="button8">Outline</button>
+		    <button class="btn" id="button9">Border</button>
+		    <button class="btn" id="button10">Shadow</button>
+		    <br>
+		    <button class="btn" id="button11">Cursor</button>
+		    <button class="btn" id="button12">Gradient</button>
+		    <button class="btn" id="button13">Logo</button>
 	    </div>
 	    <div id="box"></div>
 	</main>
