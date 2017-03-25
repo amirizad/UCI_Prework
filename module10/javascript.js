@@ -98,7 +98,7 @@ $(function(){
 	$("#button8").unbind().click(function(){
 		if($(this).html()==='Outline'){
 			$('#box').css('outline','gray groove 10px');
-			$(this).html("Outline-")
+			$(this).html("Outline ")
 			$(this).css('text-decoration','line-through');
 		}else{
 			$('#box').css('outline','none');
@@ -109,19 +109,27 @@ $(function(){
 
 	$("#button9").unbind().click(function(){
 		if($(this).html()==='Border'){
-		$('#box').css('border','5px solid black');
-			$(this).html("Border-")
+			$('#box').css('border','5px solid black');
+			$(this).html("Border ")
 			$(this).css('text-decoration','line-through');
 		}else{
 			$('#box').css('border','none');
 			$(this).html("Border")
 			$(this).css('text-decoration','none');
 		}
-
 	});
 
 	$("#button10").unbind().click(function(){
-		$('#box').css('box-shadow','10px 10px 10px '+ $("#prev-c").val());
+		if($(this).html()==='Shadow'){
+			$('#box').css('box-shadow','10px 10px 10px '+ $("#prev-c").val());
+			$(this).html("Shadow ")
+			$(this).css('text-decoration','line-through');
+		}else{
+			$('#box').css('box-shadow','none');
+			$(this).html("Shadow")
+			$(this).css('text-decoration','none');
+		}
+		
 	});
 
 	$("#button11").unbind().click(function(){
@@ -129,9 +137,11 @@ $(function(){
 	});
 
 	$("#button12").unbind().click(function(){
-		var gradient = '30% 30%, ' + $('#prev-c').val() + ', ' + $('#next-c').val();
-		$('#box').css('background': $('#prevc').val());
-		$('#box').css('background': getCssValuePrefix() + 'linear-gradient(' + gradient + ')');
+		var isCircle = $('#box').css('border-radius') === '50%';
+		var radial = '30% 30%, ' + $('#prev-c').val() + ', ' + $('#next-c').val();
+		var linear = $('#prev-c').val() + ', ' + $('#next-c').val();
+		$('#box').css('background', 'transparent');
+		$('#box').css('background', getCssValuePrefix() + (isCircle?'radial':'linear') + '-gradient(' + (isCircle?radial:linear) + ')');
 	});
 
 	$("#button13").unbind().click(function(){
