@@ -129,7 +129,7 @@ $(function(){
 	});
 
 	$("#button12").unbind().click(function(){
-		var gradient = $('#prev-c').val()+", "+$('#next-c').val()
+		var gradient = '30% 30%, ' + $('#prev-c').val() + ', ' + $('#next-c').val();
 		$('#box').css({
 			'background': $('#prevc').val(),
 			'background': getCssValuePrefix() + 'linear-gradient(' + gradient + ')',
