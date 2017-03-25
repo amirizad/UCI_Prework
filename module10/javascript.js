@@ -130,10 +130,8 @@ $(function(){
 
 	$("#button12").unbind().click(function(){
 		var gradient = '30% 30%, ' + $('#prev-c').val() + ', ' + $('#next-c').val();
-		$('#box').css({
-			'background': $('#prevc').val(),
-			'background': getCssValuePrefix() + 'linear-gradient(' + gradient + ')',
-		});
+		$('#box').css('background': $('#prevc').val());
+		$('#box').css('background': getCssValuePrefix() + 'linear-gradient(' + gradient + ')');
 	});
 
 	$("#button13").unbind().click(function(){
